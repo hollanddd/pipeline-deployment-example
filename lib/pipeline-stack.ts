@@ -22,7 +22,7 @@ export class PipelineStack extends Stack {
       pipelineName: 'SevicePipeline',
       cloudAssemblyArtifact,
       sourceAction: new GitHubSourceAction({
-        actionName: 'GitHub Source',
+        actionName: 'GitHub',
         output: sourceArtifact,
         oauthToken: SecretValue.secretsManager('github'),
         owner: props.repo.owner,
